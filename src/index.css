@@ -8,8 +8,57 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.product_card{
+#root{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.product, .cart{
+  padding: 1rem;
+  border: 5px solid grey;
+  width: 400px;
+  text-align: center;
+  position: relative;
+}
+.product_card, .cart_item{
   display: flex;
   gap: 50px;
   padding: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+.App{
+  display: flex;
+  gap: 30px;
+}
+button{
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 5px grey;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  font-weight: 700;
+  margin: 0.7rem;
+  padding-bottom: 0.5rem;
+}
+button:active{
+  box-shadow: 0 0 5px grey inset;
+}
+.total{
+  position: absolute;
+  bottom: 20px;
+  left: 40%;
+  margin: inline;
+}
+.cart_item{
+  box-shadow: 0 0 10px grey;
+  margin-top: 1rem;
+}
+.empty{
+  text-align: center;
+  margin-top: 10rem;
 }
